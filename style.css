@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #111;
+}
+#main{
+    background-image: url(https://wallpapercave.com/wp/wp1855954.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+     position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    height: 300px;
+    width: 200px;
+    /* cursor: pointer; */
+}
+/* .image{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    border-radius: 20px;
+} */
+
+.image img{
+     height: 100%;
+    width: 100%; 
+    position: absolute;
+    /* inset: 0; */
+    border-radius: 20px;
+    object-fit: cover;
+    /* transition: 0.5s; */
+    transition: ease-in-out 0.5s;
+}
+.card:hover .image img {
+    opacity: 0;
+}
+.threeD{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+     opacity: 0;
+     /* transition: 0.5s; */
+     transition: ease-in-out 0.5s;
+}
+.threeD:hover{
+    height: 100%;
+    width: 70%;
+     opacity: 1;
+     transform: translate(-50% , -65%);
+}
+.card h2{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.card:hover h2{
+    text-shadow:
+    0 0 5px rgb(255 , 0 , 0),
+    0 0 10px rgb(245, 93, 93),
+    0 0 20px rgb(255, 0, 119),
+    0 0 40px rgb(255, 0, 183),
+    0 0 80px rgb(255, 0, 234);
+}
